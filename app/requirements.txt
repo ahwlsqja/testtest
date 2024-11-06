@@ -1,0 +1,17 @@
+pymysql            # 추가
+streamlit
+sentence-transformers
+openai
+transformers
+torch
+pandas
+numpy
+python-dotenv
+folium
+sqlalchemy
+mysql-connector-python
+googlemaps
+fuzzywuzzy
+python-Levenshtein
+streamlit-folium   # 추가
+
