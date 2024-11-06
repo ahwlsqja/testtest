@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  streamlit:
+    build:
+      context: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./app:/app
+    networks:
+      - app-network
+    environment:
+      DB_HOST: "34.47.106.147"  # GCP MySQL 인스턴스의 IP
+      DB_USER: "윤진"
+      DB_PASSWORD: "dkrlrhfo0992!"
+      DB_NAME: "GCP"
+    command: streamlit run main2.py
+
+networks:
+  app-network:
+
+
+# version: '3.8'
+
+# services:
+#   db:
+#     image: mysql:latest
+#     environment:
+#       MYSQL_ROOT_PASSWORD: dkrlrhfo0992!
+#       MYSQL_DATABASE: GCP
+#       MYSQL_USER: 윤진
+#       MYSQL_PASSWORD: 1234
+#     volumes:
+#       - db_data:/var/lib/mysql
+#     networks:
+#       - app-network
+
+#   streamlit:
+#     build:
+#       context: .  # 현재 디렉토리에서 Dockerfile을 찾음
+#     ports:
+#       - "8501:8501"
+#     volumes:
+#       - ./app:/app  # 현재 디렉토리의 'app' 폴더에 Streamlit 앱 파일을 두어 컨테이너에 연결
+#     networks:
+#       - app-network
+#     command: streamlit run main2.py  # 실행할 Streamlit 파일 경로 지정
+
+# volumes:
+#   db_data:
+
+# networks:
+#   app-network:
+

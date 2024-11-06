@@ -1,0 +1,19 @@
+streamlit-folium
+sentence-transformers
+openai
+transformers
+torch==2.0.1  # +cpu 태그 제거
+fuzzywuzzy
+streamlit
+pandas
+numpy
+python-dotenv
+sqlalchemy
+mysql-connector-python
+googlemaps
+python-Levenshtein
+scikit-learn
+folium
+pymysql
+openpyxl
+python-dotenv
