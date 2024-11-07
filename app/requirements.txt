@@ -1,17 +1,19 @@
-pymysql            # 추가
-streamlit
+streamlit-folium
 sentence-transformers
-openai
+openai==0.28
 transformers
-torch
+torch==2.0.1  # +cpu 태그 제거
+fuzzywuzzy
+streamlit
 pandas
 numpy
 python-dotenv
-folium
 sqlalchemy
 mysql-connector-python
 googlemaps
-fuzzywuzzy
 python-Levenshtein
-streamlit-folium   # 추가
-
+scikit-learn
+folium
+pymysql
+openpyxl
+python-dotenv

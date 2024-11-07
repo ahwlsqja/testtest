@@ -12,9 +12,9 @@ services:
       - app-network
     environment:
       DB_HOST: "34.47.106.147"  # GCP MySQL 인스턴스의 IP
-      DB_USER: "윤진"
+      DB_USER: "root"
       DB_PASSWORD: "dkrlrhfo0992!"
-      DB_NAME: "GCP"
+      DB_NAME: "mulpaas"
     command: streamlit run main2.py
 
 networks:

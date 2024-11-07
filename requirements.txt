@@ -1,6 +1,6 @@
 streamlit-folium
 sentence-transformers
-openai
+openai==0.28
 transformers
 torch==2.0.1  # +cpu 태그 제거
 fuzzywuzzy
