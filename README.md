@@ -12,6 +12,8 @@
 사용자의 지역 정보와 요구 사항에 맞는 일자리 및 복지 시설을 추천하며, 사용자는 챗봇과의 대화를 통해 쉽게 정보를 검색할 수 있습니다.
 
 
+---
+
 ### 스플래시 화면 및 로그인 화면
 ![image](https://github.com/user-attachments/assets/5fc059f7-d224-452e-a1c8-433bf3380d3e)
 
@@ -24,15 +26,24 @@
 ![image](https://github.com/user-attachments/assets/d0902aff-a560-48c1-9f86-1375ff8e6aa2)
 
 ### 노인 복지시설 정보 페이지
-- 사용자가 입력한 위치 및 키워드를 벡터 임베딩
-- TF-IDF 기법으로 
+- 사용자가 주소와 키워드(치매, 경로당, 노인교실, 노인복지관 등)를 입력
+- 사용자가 입력한 키워드와 시설 정보(combined_text) 간의 유사도를 Fuzzy Matching으로 비교
+- TF-IDF를 사용해 문장을 벡터화하고, 사용자 입력 키워드와 시설 정보의 유사도를 코사인 유사도로 계산
+- 유사도가 높은 상위 3개 시설을 추천
+- 사용자가 시설을 선택하면 상세 정보를 표시
+- GoogleMap API로 지도를 활용하고 folium으로 현재위치(빨강마커)와 복지 시설 위치(파랑마커)를 표시 
 ![image](https://github.com/user-attachments/assets/b9f81e4f-512e-4e14-a39c-e1696d32be5a)
 ![image](https://github.com/user-attachments/assets/dff59c39-e9ec-4fc1-9e8d-e6ed4411d889)
 
 ![image](https://github.com/user-attachments/assets/c24cfd83-e76c-45ac-ace1-4ccdf2ce5000)
 
+<br><br>
+
+---
 
 ### 노인 일자리 추천 챗봇
+
+<br>
 
 ![image](https://github.com/user-attachments/assets/afd6b3ec-b361-4f59-a829-d5c7aa97e2e6)
 ![image](https://github.com/user-attachments/assets/1e7133e6-ad52-4a92-831c-d3d9a16d0555)
